@@ -3,32 +3,36 @@
   <head>
     <meta charset="UTF-8">
     <title>ClearBit Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>ClearBit Demo</h1>
-    <form action="#" id="clearbitForm">
-      <input type="text" placeholder="Stalk someone" id="clearbitEmail">
-      <input type="submit" id="clearbitSubmit">
-    </form>
-    <table>
-      <tr>
-        <td>Name</td>
-        <td id="userName"></td>
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td id="userEmail"></td>
-      </tr>
-      <tr>
-        <td>Bio</td>
-        <td id="userBio"></td>
-      </tr>
-      <tr>
-        <td>Location</td>
-        <td id="userLocation"></td>
-      </tr>
-    </table>
+    <div class="container">
+      <h1>ClearBit Demo</h1>
+      <form class="mb-4" action="#" id="clearbitForm">
+        <input type="text" placeholder="Stalk someone" id="clearbitEmail">
+        <input type="submit" id="clearbitSubmit">
+      </form>
+      <img src="images/placeholder.png" id="userAvatar" />
+      <table class="mt-2">
+        <tr>
+          <th>Name</th>
+          <td id="userName"></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td id="userEmail"></td>
+        </tr>
+        <tr>
+          <th>Bio</th>
+          <td id="userBio"></td>
+        </tr>
+        <tr>
+          <th>Location</th>
+          <td id="userLocation"></td>
+        </tr>
+      </table>
+    </div>
     <script src="build/application.js"></script>
   </body>
 </html>
